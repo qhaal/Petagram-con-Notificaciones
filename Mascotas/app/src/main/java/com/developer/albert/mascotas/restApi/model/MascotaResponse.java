@@ -6,9 +6,7 @@ import com.developer.albert.mascotas.model.Mascota;
 
 import java.util.ArrayList;
 
-/**
- * Created by anahisalgado on 25/05/16.
- */
+
 public class MascotaResponse {
 
     ArrayList<Mascota> mascotas;

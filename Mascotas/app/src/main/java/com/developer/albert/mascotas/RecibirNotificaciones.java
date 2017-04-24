@@ -58,6 +58,7 @@ public class RecibirNotificaciones extends AppCompatActivity {
             @Override
             public void onResponse(Call<UsuarioResponse> call, Response<UsuarioResponse> response) {
                 UsuarioResponse usuarioResponse = response.body();
+                ConstantesRestApi.respuestaRegistro = usuarioResponse;
                 Log.d("ID_FIREBASE", "" +usuarioResponse.getId());
                 Log.d("ID DISPOSITIVO","" + usuarioResponse.getId_dispositivo());
                 Log.d("ID INSTAGRAM","" + usuarioResponse.getId_usuario_instagram());
